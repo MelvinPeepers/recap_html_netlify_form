@@ -109,6 +109,23 @@ button {
 
 /*
 
+
+focus and hover states
+
+*/
+
+input:hover,
+button:hover {
+  border-color: #86f3df; /* Lighter border on hover */
+}
+
+input:focus,
+button:focus {
+  background-color: #1d2528; /* Slightly lighter background on focus */
+}
+
+/*
+
 media
 
 */
