@@ -16,7 +16,12 @@
       <h1>Netlify HTML Form</h1>
       <h2>Contact Form</h2>
       <p>Have any questions or suggestions?</p>
-      <form name="contact" method="POST" data-netlify="true">
+      <form
+        name="contact"
+        method="POST"
+        data-netlify="true"
+        enctype="multipart/form-data"
+      >
         <div class="row">
           <div class="column">
             <label for="name">Name</label>
@@ -60,6 +65,12 @@
               name="message"
               placeholder="Leave your message here"
             ></textarea>
+          </div>
+          <div>
+            <label
+              >Add file:
+              <input id="file" name="file" type="file" />
+            </label>
           </div>
         </div>
         <button type="submit">Submit</button>
